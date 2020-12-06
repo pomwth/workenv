@@ -28,6 +28,7 @@ ln -fs $DIR/oh-my-zsh $HOME/.oh-my-zsh
 
 # Install GIT
 sudo apt install git -y
+git config --global core.editor "vim"
 git config --global user.email "pom.wallop.th@gmail.com"
 git config --global user.name "Wallop Th"
 
@@ -36,5 +37,5 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh
-
+gh config set editor vim
 
