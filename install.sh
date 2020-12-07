@@ -31,6 +31,7 @@ sudo apt install git -y
 git config --global core.editor "vim"
 git config --global user.email "pom.wallop.th@gmail.com"
 git config --global user.name "Wallop Th"
+git config --global push.defailt current
 
 # Install GitHub CLI
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
@@ -38,4 +39,9 @@ sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh
 gh config set editor vim
+
+sudo apt install nodejs -y
+sudo apt install npm -y
+
+sudo apt install ripgrep
 
