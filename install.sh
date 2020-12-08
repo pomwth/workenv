@@ -45,3 +45,10 @@ sudo apt install npm -y
 
 sudo apt install ripgrep
 
+sudo dpkg -i git-delta_0.4.4_amd64.deb
+git config --global core.pager delta
+git config --global delta.plus-color "#012800"
+git config --global delta.minus-color "#340001"
+git config --global delta.syntax-theme 'Monokai Extended'
+git config --global delta.side-by-side true
+git config --global interactive.diffFilter 'delta --color-only'
